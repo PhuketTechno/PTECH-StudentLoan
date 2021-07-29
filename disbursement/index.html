@@ -10,6 +10,7 @@
 
     .img_w {
         height: 1000px;
+        text-align: center;
     }
 
     img {
@@ -40,14 +41,14 @@
         <h1>การจัดทำแบบยืนยันการเบิกเงินกู้ยืม</h1>
     </div>
 
-    
+
     <div class="video-wrapper">
         <iframe src="https://www.youtube.com/embed/VGdym65SJAE?rel=0" frameborder="0" allowfullscreen></iframe>
-        
-      </div>
 
-      
- 
+    </div>
+
+
+
 
     <div class="w3-row-padding w3-margin-top">
 
@@ -206,7 +207,7 @@
         <div class="w3-third w3-margin-top img_w">
             <div class="w3-card  ">
                 <div class="w3-container w3-brown">
-                    <h4>14. ให้นักศึกษา ดาวน์โหลดเอกสาร แบบยืนยันการเบิกเงินฯ และ Print ลงกระดาษ A4 จำนวน 3 ชุด
+                    <h4>14. ให้นักศึกษา ดาวน์โหลดเอกสาร แบบยืนยันการเบิกเงินฯ และ Print ลงกระดาษ A4  
                     </h4>
                 </div>
                 <div class="w3-card  ">
@@ -219,7 +220,7 @@
         <div class="w3-third w3-margin-top img_w">
             <div class="w3-card  ">
                 <div class="w3-container w3-brown">
-                    <h4>15. ตัวอย่าง แบบยืนยันการเบิกเงินฯ ให้ Print ลงกระดาษ A4 จำนวน 3 ชุด
+                    <h4>15. ตัวอย่าง แบบยืนยันการเบิกเงินฯ ให้ Print ลงกระดาษ A4 
                     </h4>
                 </div>
                 <div class="w3-card  ">
@@ -228,15 +229,26 @@
             </div>
         </div>
 
+        
+        <div class="w3-half w3-margin-top img_w">
+            <div class="w3-card  ">
+                <div class="w3-container w3-brown">
+                    <h4>16. สิ่งที่ต้องนำมา ในการลงนาม
+                    </h4>
+                </div>
+                <div class="w3-card  ">
+                    <img src="https://i.imgur.com/w1DeeJM.jpg">
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
-        let img=document.querySelectorAll("img").forEach((e)=> {
-            e.addEventListener("click", (e)=> {
+        document.querySelectorAll("img").forEach((e) => {
+            e.addEventListener("click", (e) => {
                 e.preventDefault();
-                let url=e.target.src
+                let url = e.target.src;
                 window.open(url, '_blank');
-                 
             })
         })
     </script>
