@@ -9,12 +9,13 @@
     }
 
     .img_w {
-        height: 800px;
+        height: 1000px;
     }
 
     img {
         width: 100%;
-        max-height: 100%
+        max-height: 80%;
+        cursor: pointer;
     }
 
     .video-wrapper {
@@ -216,25 +217,16 @@
 
 
 
-
-
-
-
-
-
-
-
-
     </div>
 
-
-
-
-
-
-
-
-
+    <script>
+        let img=document.querySelectorAll("img").forEach((e)=> {
+            e.addEventListener("click", (e)=> {
+                e.preventDefault();
+                location=e.target.src;
+            })
+        })
+    </script>
 </body>
 
 </html>
