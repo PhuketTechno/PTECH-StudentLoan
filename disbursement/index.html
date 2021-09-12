@@ -1,39 +1,86 @@
 <!DOCTYPE html>
 <html>
-<title>การจัดทำแบบยืนยันการเบิกเงินกู้ยืม</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-    h4 {
-        font-size: 1.3rem;
-    }
 
-    .img_w {
-        height: 1000px;
-        overflow: hidden;
-    }
+<head>
+    <title>การจัดทำแบบยืนยันการเบิกเงินกู้ยืม</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        div.gallery {
+            border: 5px solid rgb(57, 8, 235);
+        }
 
-    img {
-        width: 100%;
-        max-height: 80%;
-        cursor: pointer;
-    }
 
-    .video-wrapper {
-        position: relative;
-        padding-bottom: 56.25%;
-        /* 16:9 */
-        padding-top: 25px;
-    }
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
 
-    .video-wrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-</style>
+        div.desc {
+            padding: 5px;
+            text-align: left;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+        }
+
+        .img_w {
+            height: 1000px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            max-height: 80%;
+            cursor: pointer;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            padding-top: 25px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
 
 <body>
 
@@ -41,204 +88,150 @@
         <h1>การจัดทำแบบยืนยันการเบิกเงินกู้ยืม</h1>
     </div>
 
-
     <div class="video-wrapper">
         <iframe src="https://www.youtube.com/embed/VGdym65SJAE?rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
 
 
-
-
-    <div class="w3-row-padding w3-margin-top">
-
-
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card ">
-                <div class="w3-container w3-brown">
-                    <h4>1. ในแอป กยศ. Connect ✅ กดที่เมนูบริการ ✅ เลือกยื่นกู้ </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/ORjd9aq.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>1. ในแอป กยศ. Connect ✅ กดที่เมนูบริการ ✅ เลือกยื่นกู้ </h4>
             </div>
+            <img src="https://i.imgur.com/ORjd9aq.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>2. เลือกเบิกเงินกู้ยืม </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/pFaAtm1.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>2. เลือกเบิกเงินกู้ยืม </h4>
             </div>
+            <img src="https://i.imgur.com/pFaAtm1.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>3. โปรแกรมจะแสดงข้อมูลของนักศึกษา </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/eFFDvUS.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>3. โปรแกรมจะแสดงข้อมูลของนักศึกษา </h4>
             </div>
+            <img src="https://i.imgur.com/eFFDvUS.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>4. โปรแกรมจะแสดงจำนวนเงินที่นักศึกษาสามารถกู้ได้ <br>หากต้องการกู้ค่าเทอม ✅ให้ติ๊กเลือก
-                        ค่าเล่าเรียน และค่าใช้จ่ายที่เกี่ยวเนื่องกับการศึกษา </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/zLFyRko.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>4. โปรแกรมจะแสดงจำนวนเงินที่นักศึกษาสามารถกู้ได้ <br>หากต้องการกู้ค่าเทอม ✅ให้ติ๊กเลือก
+                    ค่าเล่าเรียน และค่าใช้จ่ายที่เกี่ยวเนื่องกับการศึกษา </h4>
             </div>
-
+            <img src="https://i.imgur.com/zLFyRko.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>5. ให้ใส่ยอดเงินค่าเทอม ที่ผู้กู้สามารถเบิกได้ (ของแต่ละคนไม่เท่ากัน ตามระดับชั้น และสาขาวิชา)
-                    </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/pXieq0J.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>5. ให้ใส่ยอดเงินค่าเทอม ที่ผู้กู้สามารถเบิกได้ (ของแต่ละคนไม่เท่ากัน ตามระดับชั้น และสาขาวิชา)
+                </h4>
             </div>
+            <img src="https://i.imgur.com/pXieq0J.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card ">
-                <div class="w3-container w3-brown">
-                    <h4>6. หากต้องการกู้ค่าครองชีพ ✅ให้ติ๊กเลือก ค่าครองชีพ</h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/7EzQmbl.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>6. หากต้องการกู้ค่าครองชีพ ✅ให้ติ๊กเลือก ค่าครองชีพ</h4>
             </div>
+            <img src="https://i.imgur.com/7EzQmbl.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>7. โปรแกรมจะแสดงยอดรวม ของจำนวนเงินที่นักศึกษาขอกู้ </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/TWVjYOa.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>7. โปรแกรมจะแสดงยอดรวม ของจำนวนเงินที่นักศึกษาขอกู้ </h4>
             </div>
+            <img src="https://i.imgur.com/TWVjYOa.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>8. ✅ให้ติ๊กเลือก ประเภทการลงนามแบบกระดาษ<br>
-                        และกดปุ่ม ถัดไป </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/5OEdEu9.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>8. ✅ให้ติ๊กเลือก ประเภทการลงนามแบบกระดาษ<br>
+                    และกดปุ่ม ถัดไป </h4>
             </div>
+            <img src="https://i.imgur.com/5OEdEu9.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>9.กด ยืนยัน</h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/Pmsj681.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>9.กด ยืนยัน</h4>
             </div>
-
+            <img src="https://i.imgur.com/Pmsj681.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>10.โปรแกรมจะสรุปข้อมูลทั้งหมด <br>กด ถัดไป
-                    </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/XzDK0fu.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>10.โปรแกรมจะสรุปข้อมูลทั้งหมด <br>กด ถัดไป
+                </h4>
             </div>
+            <img src="https://i.imgur.com/XzDK0fu.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>11. บันทึกข้อมูลสำเร็จ 😄<br>
-                        กด กลับหน้าหลัก </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/hQ7LCn1.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>11. บันทึกข้อมูลสำเร็จ 😄<br>
+                    กด กลับหน้าหลัก </h4>
             </div>
+            <img src="https://i.imgur.com/hQ7LCn1.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>12. กดที่ เบิกเงินกู้ยืม อีกครั้ง</h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/4CpPoMQ.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>12. กดที่ เบิกเงินกู้ยืม อีกครั้ง</h4>
             </div>
+            <img src="https://i.imgur.com/4CpPoMQ.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top w3-container img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>13. กดที่ดาวน์โหลดเอกสารประกอบการลงนาม</h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/K1IdVf0.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>13. กดที่ดาวน์โหลดเอกสารประกอบการลงนาม</h4>
             </div>
-
+            <img src="https://i.imgur.com/K1IdVf0.jpg">
         </div>
+    </div>
 
-        <div class="w3-half w3-margin-top img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>14. ให้นักศึกษา ดาวน์โหลดเอกสาร แบบยืนยันการเบิกเงินฯ และ Print ลงกระดาษ A4
-                    </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/Qh8ZLAG.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>14. ให้นักศึกษา ดาวน์โหลดเอกสาร แบบยืนยันการเบิกเงินฯ และ Print ลงกระดาษ A4
+                </h4>
             </div>
+            <img src="https://i.imgur.com/Qh8ZLAG.jpg">
         </div>
+    </div>
 
-
-        <div class="w3-half w3-margin-top img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>15. ตัวอย่าง แบบยืนยันการเบิกเงินฯ ให้ Print ลงกระดาษ A4
-                    </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/1jcVsDy.jpg">
-                </div>
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc w3-brown">
+                <h4>15. ตัวอย่าง แบบยืนยันการเบิกเงินฯ ให้ Print ลงกระดาษ A4
+                </h4>
             </div>
-        </div>
-
-
-        <div class="w3-half w3-margin-top img_w">
-            <div class="w3-card  ">
-                <div class="w3-container w3-brown">
-                    <h4>16. สิ่งที่ต้องนำมา ในการลงนาม
-                    </h4>
-                </div>
-                <div class="w3-card  ">
-                    <img src="https://i.imgur.com/w1DeeJM.jpg">
-                </div>
-            </div>
+            <img src="https://i.imgur.com/1jcVsDy.jpg">
         </div>
     </div>
 
@@ -250,8 +243,6 @@
                 window.open(url, '_blank');
             })
         })
-
-  
     </script>
 </body>
 
