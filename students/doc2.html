@@ -54,12 +54,12 @@
             max-height: 80%;
             cursor: pointer;
         }
+      
+      img.btn {
+        width:20%;
+      }
 	    
-	.download {
-	    background-image:url("https://i.imgur.com/QnmAEFZ.png");
-	    width:20%;
-	    height:150px;
-	}
+ 
     </style>
 </head>
 
@@ -72,16 +72,15 @@
 
     <div class="responsive w3-container w3-center">
 	    
-	<A  href="https://bit.ly/3yUT9xx?openExternalBrowser=1" target="_blank">
- 	<div class="download"> 	
-	</div> </a>
+	<A  href="https://bit.ly/3yUT9xx?openExternalBrowser=1" target="_blank"> <img src="https://i.imgur.com/QnmAEFZ.png" class="btn">
+  </a>
 
         <div class="gallery">
             <div class="desc w3-black w3-center">
                 <h4>ตัวอย่างหนังสือรับรองรายได้ครอบครัวฯ 
 	<br>✔ กรณีมารดา มีรายได้ไม่ประจำ </h4>
             </div>
-            <img src="https://i.imgur.com/bRFxg08.jpg">
+            <img src="https://i.imgur.com/bRFxg08.jpg" class="dl">
         </div>
 
 <div class="gallery">
@@ -89,7 +88,7 @@
                 <h4>หนังสือรับรองรายได้ครอบครัวฯ 
 	<br>✔ กรณีบิดา มารดา มีรายได้ไม่ประจำ ทั้งคู่ </h4>
             </div>
-            <img src="https://i.imgur.com/0YUDDKw.jpg">
+            <img src="https://i.imgur.com/0YUDDKw.jpg" class="dl">
 </div>
 
 <div class="gallery">
@@ -97,7 +96,7 @@
                 <h4>ตัวอย่างหนังสือรับรองรายได้ครอบครัวฯ 
 	<br>✔ กรณีผู้ปกครอง  มีรายได้ไม่ประจำ</h4>
             </div>
-            <img src="https://i.imgur.com/DnD58gD.jpg">
+            <img src="https://i.imgur.com/DnD58gD.jpg" class="dl">
 </div>
 
 <div class="gallery">
@@ -105,14 +104,14 @@
                 <h4>ตัวอย่างหนังสือรับรองรายได้ครอบครัวฯ 
 	<br>✔ กรณีมารดา / บิดา เลี้ยงเดี่ยว มีรายได้ไม่ประจำ</h4>
             </div>
-            <img src="https://i.imgur.com/CRYXW1Y.jpg">
+            <img src="https://i.imgur.com/CRYXW1Y.jpg" class="dl">
 </div>
 
     </div>
 
 
     <script>
-        document.querySelectorAll("img").forEach((e) => {
+        document.querySelectorAll("img.dl").forEach((e) => {
             e.addEventListener("click", (e) => {
                 e.preventDefault();
                 let url = e.target.src;
