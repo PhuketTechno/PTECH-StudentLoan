@@ -1,90 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 
 <head>
+    <meta charset="UTF-8">
     <title>การจัดทำแบบยืนยันการเบิกเงินกู้ยืม</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-        div.gallery {
-            border: 5px solid rgb(57, 8, 235);
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #fafafa;
+            scroll-behavior: smooth;
         }
-
-
-        div.gallery img {
-            width: 100%;
-            height: auto;
+        .w3-container {
+            padding: 20px;
+            background-color: #009688;
+            color: white;
+            text-align: center;
         }
-
-        div.desc {
-            padding: 5px;
-            text-align: left;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        .responsive {
-            padding: 0 6px;
-            float: left;
-            width: 24.99999%;
-        }
-
-        @media only screen and (max-width: 700px) {
-            .responsive {
-                width: 49.99999%;
-                margin: 6px 0;
-            }
-        }
-
-        @media only screen and (max-width: 500px) {
-            .responsive {
-                width: 100%;
-            }
-        }
-
-        .clearfix:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        h4 {
-            font-size: 1.3rem;
-        }
-
-        .img_w {
-            height: 1000px;
-            overflow: hidden;
-        }
-
-        img {
-            width: 100%;
-            max-height: 80%;
-            cursor: pointer;
-        }
-
         .video-wrapper {
             position: relative;
             padding-bottom: 56.25%;
-            /* 16:9 */
             padding-top: 25px;
         }
-
         .video-wrapper iframe {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+        }
+        .step-block {
+            background-color: #fff;
+            margin: 16px;
+            border: 4px solid rgb(57, 8, 235);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 16px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        .step-header {
+            display: flex;
+            align-items: center;
+            background-color: #795548;
+            color: white;
+            padding: 12px;
+            font-size: 1.2rem;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 12px;
+        }
+        .step-badge {
+            margin-right: 12px;
+            background-color: #ff9800;
+            color: white;
+            font-weight: bold;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+            gap: 12px;
+        }
+        .image-grid img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        #backToTop {
+            position: fixed;
+            bottom: 20px; right: 20px;
+            display: none;
+            background-color: #009688;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px; height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: background-color 0.3s, transform 0.2s;
+            z-index: 1000;
+        }
+        #backToTop:hover {
+            background-color: #00796b;
+            transform: scale(1.1);
         }
     </style>
 </head>
 
 <body>
 
-    <div class="w3-container w3-teal">
+    <div class="w3-container">
         <h1>การจัดทำแบบยืนยันการเบิกเงินกู้ยืม</h1>
     </div>
 
@@ -92,158 +114,148 @@
         <iframe src="https://www.youtube.com/embed/VGdym65SJAE?rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
 
+    <!-- START STEPS -->
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>1. ในแอป กยศ. Connect ✅ กดที่เมนูบริการ ✅ เลือกยื่นกู้ </h4>
-            </div>
-            <img src="https://i.imgur.com/ORjd9aq.jpg">
+    <!-- Step 1 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">1</div>ในแอป กยศ. Connect ✅ กดที่เมนูบริการ ✅ เลือกยื่นกู้</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/ORjd9aq.jpg" alt="step1-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>2. เลือกเบิกเงินกู้ยืม </h4>
-            </div>
-            <img src="https://i.imgur.com/pFaAtm1.jpg">
+    <!-- Step 2 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">2</div>เลือกเบิกเงินกู้ยืม</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/pFaAtm1.jpg" alt="step2-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>3. โปรแกรมจะแสดงข้อมูลของนักศึกษา </h4>
-            </div>
-            <img src="https://i.imgur.com/eFFDvUS.jpg">
+    <!-- Step 3 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">3</div>โปรแกรมจะแสดงข้อมูลของนักศึกษา</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/eFFDvUS.jpg" alt="step3-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>4. โปรแกรมจะแสดงจำนวนเงินที่นักศึกษาสามารถกู้ได้ <br>หากต้องการกู้ค่าเทอม ✅ให้ติ๊กเลือก
-                    ค่าเล่าเรียน และค่าใช้จ่ายที่เกี่ยวเนื่องกับการศึกษา </h4>
-            </div>
-            <img src="https://i.imgur.com/zLFyRko.jpg">
+    <!-- Step 4 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">4</div>เลือกค่าเล่าเรียน และค่าใช้จ่ายที่เกี่ยวเนื่องกับการศึกษา</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/zLFyRko.jpg" alt="step4-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>5. ให้ใส่ยอดเงินค่าเทอม ที่ผู้กู้สามารถเบิกได้ (ของแต่ละคนไม่เท่ากัน ตามระดับชั้น และสาขาวิชา)
-                </h4>
-            </div>
-            <img src="https://i.imgur.com/pXieq0J.jpg">
+    <!-- Step 5 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">5</div>ใส่ยอดเงินค่าเทอม (แต่ละคนไม่เท่ากัน)</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/pXieq0J.jpg" alt="step5-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>6. หากต้องการกู้ค่าครองชีพ ✅ให้ติ๊กเลือก ค่าครองชีพ</h4>
-            </div>
-            <img src="https://i.imgur.com/7EzQmbl.jpg">
+    <!-- Step 6 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">6</div>หากต้องการกู้ค่าครองชีพ ✅ ให้ติ๊กเลือก ค่าครองชีพ</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/7EzQmbl.jpg" alt="step6-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>7. โปรแกรมจะแสดงยอดรวม ของจำนวนเงินที่นักศึกษาขอกู้ </h4>
-            </div>
-            <img src="https://i.imgur.com/TWVjYOa.jpg">
+    <!-- Step 7 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">7</div>โปรแกรมจะแสดงยอดรวมเงินที่ขอกู้</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/TWVjYOa.jpg" alt="step7-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>8. ✅ให้ติ๊กเลือก ประเภทการลงนามแบบกระดาษ<br>
-                    และกดปุ่ม ถัดไป </h4>
-            </div>
-            <img src="https://i.imgur.com/5OEdEu9.jpg">
+    <!-- Step 8 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">8</div>✅ ติ๊กเลือก ประเภทการลงนามแบบกระดาษ และกด ถัดไป</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/5OEdEu9.jpg" alt="step8-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>9.กด ยืนยัน</h4>
-            </div>
-            <img src="https://i.imgur.com/Pmsj681.jpg">
+    <!-- Step 9 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">9</div>กด ยืนยัน</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/Pmsj681.jpg" alt="step9-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>10.โปรแกรมจะสรุปข้อมูลทั้งหมด <br>กด ถัดไป
-                </h4>
-            </div>
-            <img src="https://i.imgur.com/XzDK0fu.jpg">
+    <!-- Step 10 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">10</div>โปรแกรมจะสรุปข้อมูลทั้งหมด กด ถัดไป</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/XzDK0fu.jpg" alt="step10-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>11. บันทึกข้อมูลสำเร็จ 😄<br>
-                    กด กลับหน้าหลัก </h4>
-            </div>
-            <img src="https://i.imgur.com/hQ7LCn1.jpg">
+    <!-- Step 11 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">11</div>บันทึกข้อมูลสำเร็จ 😄 กด กลับหน้าหลัก</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/hQ7LCn1.jpg" alt="step11-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>12. กดที่ เบิกเงินกู้ยืม อีกครั้ง</h4>
-            </div>
-            <img src="https://i.imgur.com/4CpPoMQ.jpg">
+    <!-- Step 12 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">12</div>กด เบิกเงินกู้ยืม อีกครั้ง</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/4CpPoMQ.jpg" alt="step12-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>13. กดที่ดาวน์โหลดเอกสารประกอบการลงนาม</h4>
-            </div>
-            <img src="https://i.imgur.com/K1IdVf0.jpg">
+    <!-- Step 13 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">13</div>กด ดาวน์โหลดเอกสารประกอบการลงนาม</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/K1IdVf0.jpg" alt="step13-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>14. ให้นักศึกษา ดาวน์โหลดเอกสาร แบบยืนยันการเบิกเงินฯ และ Print ลงกระดาษ A4
-                </h4>
-            </div>
-            <img src="https://i.imgur.com/Qh8ZLAG.jpg">
+    <!-- Step 14 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">14</div>ดาวน์โหลดเอกสาร และ Print ลงกระดาษ A4</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/Qh8ZLAG.jpg" alt="step14-1">
         </div>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <div class="desc w3-brown">
-                <h4>15. ตัวอย่าง แบบยืนยันการเบิกเงินฯ ให้ Print ลงกระดาษ A4
-                </h4>
-            </div>
-            <img src="https://i.imgur.com/1jcVsDy.jpg">
+    <!-- Step 15 -->
+    <div class="step-block">
+        <div class="step-header"><div class="step-badge">15</div>ตัวอย่างแบบยืนยันการเบิกเงินฯ ให้ Print ลงกระดาษ A4</div>
+        <div class="image-grid">
+            <img src="https://i.imgur.com/1jcVsDy.jpg" alt="step15-1">
         </div>
     </div>
+
+    <!-- END STEPS -->
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="กลับขึ้นบน">↑</button>
 
     <script>
-        document.querySelectorAll("img").forEach((e) => {
-            e.addEventListener("click", (e) => {
-                e.preventDefault();
-                let url = e.target.src;
-                window.open(url, '_blank');
-            })
-        })
+        // เปิดรูปใหม่เมื่อคลิก
+        document.querySelectorAll(".image-grid img").forEach(img => {
+            img.addEventListener("click", () => {
+                window.open(img.src, '_blank');
+            });
+        });
+        // Back to Top visibility and click
+        const bt = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            bt.style.display = (window.scrollY > 300) ? 'block' : 'none';
+        });
+        bt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     </script>
+
 </body>
 
 </html>
