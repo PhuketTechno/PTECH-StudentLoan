@@ -61,29 +61,36 @@
             font-size: 1rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
+
+        /* === IMAGE GRID & CENTERING === */
         .image-grid {
             display: grid;
             grid-template-columns: 1fr; /* mobile default */
             gap: 12px;
+            justify-items: center;       /* center items horizontally */
+            align-items: center;         /* center items vertically (line height) */
+            margin: 0 auto;              /* center the grid container itself if it has intrinsic width */
         }
-        
         @media (min-width: 1024px) {
             .image-grid {
                 grid-template-columns: repeat(2, 1fr); /* PC: 2 columns */
             }
         }
         .image-grid img {
-          width: 100%;
-          height: auto;
-          border-radius: 8px;
-          cursor: pointer;
-          transition: transform 0.2s, box-shadow 0.2s;
+            display: block;      /* allow margin centering */
+            margin: 0 auto;      /* center the image itself */
+            max-width: 100%;     /* prevent overflow */
+            width: auto;         /* keep natural width inside the column */
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-
         .image-grid img:hover {
             transform: scale(1.03);
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to   { opacity: 1; transform: translateY(0); }
@@ -263,5 +270,4 @@
     </script>
 
 </body>
-
 </html>
